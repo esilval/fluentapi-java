@@ -1,0 +1,37 @@
+**/.metadata/*
+**/.recommenders/*
+**/.RemoteSystemsTempFiles/*
+**/Servers/*
+**/.settings/*
+**/target/*
+
+
+# Ignore old/changing intellij project files and directories
+*.iml
+*.iws
+*.ipr
+*.ids
+*.log
+.idea
+*.project
+*.classpath
+
+#ignore deployable files
+**/bin/*
+bin/*.war
+bin/*.jar
+
+# Ignore compiler output
+target/
+out/
+
+# Ignore Gradle build output
+build/
+.gradle/
+
+docs/src/main/webapp/src/docs
+docs/src/main/webapp/src/docs/*.json
+docs/src/main/webapp/src/docs-intl
+docs/src/main/webapp/src/docs-intl/*.json
+/.metadata/
+/.recommenders/

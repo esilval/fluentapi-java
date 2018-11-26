@@ -1,0 +1,10 @@
+# Sistema de Información de Bicicletas BiciApp
+
+Módulo de servicios para la gestión de información de bicicletas en la ciudad de Bogotá. El cual ayudará a registrar usuarios, bicicletas, novedades de robos y hallazgos de bicicletas.
+
+## Herramientas
+- Java 8.
+- Spring (Spring Boot, Spring Data).
+- MySQL (5.7).
+- Docker
+- Maven.
