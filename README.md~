@@ -1,10 +1,12 @@
-# Sistema de Información de Bicicletas BiciApp
+<<<<<<< HEAD
+# Java FluentAPI
 
-Módulo de servicios para la gestión de información de bicicletas en la ciudad de Bogotá. El cual ayudará a registrar usuarios, bicicletas, novedades de robos y hallazgos de bicicletas.
+A Fluent API example built under the latest Java version
 
-## Herramientas
+## Tools
 - Java 8.
-- Spring (Spring Boot, Spring Data).
-- MySQL (5.7).
-- Docker
 - Maven.
+=======
+# fluentapi-java
+A basic example of Fluent API build under the latest java version.
+>>>>>>> 6e8e74190b532e58dd9aa55dfaea32f073418668
