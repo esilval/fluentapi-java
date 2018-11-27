@@ -82,6 +82,7 @@ public class SimpleFluentIterable<E> implements FluentIterable<E> {
       if (current >= count) {
         iterator.remove();
       }
+      current++;
     }
     return this;
   }
@@ -112,7 +113,7 @@ public class SimpleFluentIterable<E> implements FluentIterable<E> {
     int current = 0;
     while (iterator.hasNext()) {
       iterator.next();
-      if (current <= (remainingElementsCount - count)) {
+      if (current < (remainingElementsCount - count)) {
         iterator.remove();
       }
       current++;
@@ -127,7 +128,12 @@ public class SimpleFluentIterable<E> implements FluentIterable<E> {
   @Override
   public <T> FluentIterable<T> map(Function<? super E, T> function)
   {
-    return null;
+    List<T> temporaryList = new ArrayList<>();
+    Iterator<E> iterator = iterator();
+    while (iterator.hasNext()) {
+      temporaryList.add(function.apply(iterator.next()));
+    }
+    return from(temporaryList);
   }
 
   /*
